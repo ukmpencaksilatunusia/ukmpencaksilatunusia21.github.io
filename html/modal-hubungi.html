@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Hubungi</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind -->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script> <!-- Alpine.js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script> <!-- SweetAlert2 -->
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-100">
+
+    <!-- Tombol Hubungi -->
+    <button @click="openModal = true" class="bg-blue-500 text-white px-4 py-2 rounded">Hubungi</button>
+
+    <!-- Modal -->
+    <div x-data="{ openModal: false }">
+        <div x-show="openModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-1/3 relative">
+                <!-- Tombol Close -->
+                <button @click="openModal = false" class="absolute top-2 right-2 text-gray-500">❌</button>
+
+                <h2 class="text-xl font-bold mb-4">Hubungi Kami</h2>
+                <input type="text" placeholder="Nama" class="w-full border p-2 mb-2 rounded">
+                <input type="email" placeholder="Email" class="w-full border p-2 mb-2 rounded">
+                <textarea placeholder="Pesan" class="w-full border p-2 mb-2 rounded"></textarea>
+
+                <!-- Tombol Kirim -->
+                <button @click="showConfirm()" class="bg-green-500 text-white px-4 py-2 rounded">Kirim</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="modal-hubungi.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/d/1hG-F2JiaPbsMC48ILGQ5CdqjjnhNYn47=w1000">
+    <title>Galeri</title>
+    <!-- Import Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>      
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="galeri.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-black/50 backdrop-blur-lg shadow-md fixed top-0 left-0 w-full z-50">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <!-- Logo + Brand -->
+        <div class="flex items-center space-x-3">
+          <img src="https://lh3.googleusercontent.com/d/1hG-F2JiaPbsMC48ILGQ5CdqjjnhNYn47=w1000" alt="Logo" class="h-8 w-8">
+          <span class="text-xl font-semibold text-white">UKM Pencak Silat</span>
+        </div>
+    
+        <!-- Navbar Tengah -->
+        <div class="hidden md:flex space-x-6">
+          <a href="../beranda/index.html" class="text-white hover:text-green-400 transition duration-300">Beranda</a>
+          <a href="../tentang/tentang.html" class="text-white hover:text-green-400 transition duration-300">Tentang</a>
+          <a href="../galeri/galeri.html" class="text-white hover:text-green-400 transition duration-300">Galeri</a>
+          <a href="../prestasi/prestasi.html" class="text-white hover:text-green-400 transition duration-300">Prestasi</a>
+        </div>
+    
+        <!-- Tombol Kanan -->
+        <div class="hidden md:flex space-x-4">
+          <button class=" text-white px-4 py-2 rounded-full transition duration-300 hover:bg-green-800">
+            Daftar
+        </button>
+        <a href="../hubungi/hubungi.html" target="_blank"><button class=" text-white px-4 py-2 rounded-full transition duration-300 hover:bg-green-800">
+            Hubungi
+        </button></a> 
+        </div>
+    
+        <!-- Tombol Hamburger (Mobile) -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </nav>
+    
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-black/80 backdrop-blur-lg shadow-lg">
+        <a href="../beranda/index.html" class="block px-6 py-3 border-b text-white hover:bg-gray-800 transition duration-300">Beranda</a>
+        <a href="../tentang/tentang.html" class="block px-6 py-3 border-b text-white hover:bg-gray-800 transition duration-300">Tentang</a>
+        <a href="../galeri/galeri.html" class="block px-6 py-3 border-b text-white hover:bg-gray-800 transition duration-300">Galeri</a>
+        <a href="../prestasi/prestasi.html" class="block px-6 py-3 border-b text-white hover:bg-gray-800 transition duration-300">Prestasi</a>
+        <button class="w-full px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">Daftar</button>
+        <a href="../hubungi/hubungi.html" target="_blank"><button class="w-full px-6 py-3 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition duration-300 mt-2">Hubungi</button></a> 
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Welcome -->
+    <section class="relative w-full h-screen flex items-center justify-center bg-gray-900">
+        <div class="absolute inset-0 bg-[url('https://lh3.googleusercontent.com/d/1_us2ZFh6YfmrWl_KOk0dS0KifGalL0ia=w1000')] bg-cover bg-center opacity-50"></div>
+        <div class="relative z-10 text-center text-white">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">Selamat Datang di Galeri Kami</h1>
+          <p class="text-lg md:text-xl max-w-2xl mx-auto">
+            Temukan berbagai momen dan kegiatan terbaik dalam dokumentasi kami.
+          </p>
+        </div>
+      </section>    
+    <!-- End Welcome -->
+
+    <!-- Galeri -->
+    <section id="gallery" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">Galeri Kegiatan</h2>
+  
+          <!-- Album 1 -->
+          <div class="mb-10">
+              <h3 class="text-xl font-semibold mb-4">Latihan Keatlitan</h3>
+              <div class="relative w-full overflow-hidden">
+                  <div id="slider1" class="flex transition-transform duration-500">
+                      <img src="https://lh3.googleusercontent.com/d/1UEJ4WdeMyN689kNoeYnLzanyAJnIFSLT=w1000" class="w-full h-64 object-cover">
+                      <img src="https://lh3.googleusercontent.com/d/1VxVJyTr1g0MEE3Hx7ep39QC2Q_gkTOlj=w1000" class="w-full h-64 object-cover">
+                      <img src="https://lh3.googleusercontent.com/d/1z-Ujsum5q29H6wN6vNy4-Cq0faFTO0KX=w1000" class="w-full h-64 object-cover">
+                      <img src="https://lh3.googleusercontent.com/d/1vesRw3uadzSKvq62-4FC2iGvxfxKasmw=w1000" class="w-full h-64 object-cover">
+                      <img src="https://lh3.googleusercontent.com/d/11cSBO1AY8epZHsznLt5-Rjt9JEgHES_5=w1000" class="w-full h-64 object-cover">
+                      <img src="https://lh3.googleusercontent.com/d/1qhjqsvnPxlGFF-7Cd6rNeY8Lk7U5rNZt=w1000" class="w-full h-64 object-cover">
+                      <img src="https://lh3.googleusercontent.com/d/1xz0EYhDIxC9OWjCMBeQt1KEjmLlwc79e=w1000" class="w-full h-64 object-cover">
+                      <img src="https://lh3.googleusercontent.com/d/1Lrx-N-HSf6uo1P_9PE3yQJkWWUk5VNDd=w1000" class="w-full h-64 object-cover">
+                      <img src="https://lh3.googleusercontent.com/d/1gvwBOhOnQzM1TM1sJAHt6OQEw6WN1TD2=w1000" class="w-full h-64 object-cover">
+                      <img src="https://lh3.googleusercontent.com/d/1ETpaW5fHYLTT-1pRI7ISY4UHGjG7H-Ut=w1000" class="w-full h-64 object-cover">
+                      <img src="https://lh3.googleusercontent.com/d/1-QjEVEGIj_Rj2m2oCtg5inv-S1aJSiqD=w1000" class="w-full h-64 object-cover">
+                      <img src="https://lh3.googleusercontent.com/d/1hdIvgF91aeBuXq37oEyjmUAUrXzqW1Eg=w1000" class="w-full h-64 object-cover">
+                      <img src="https://lh3.googleusercontent.com/d/=w1000" class="w-full h-64 object-cover">
+                  </div>
+                  <button onclick="prevSlide(1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2">‹</button>
+                  <button onclick="nextSlide(1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-2">›</button>
+              </div>
+              <button onclick="toggleGallery(1)" class="mt-3 text-blue-600 flex items-center">
+                  <span id="toggleText1">Lihat lebih lengkap</span>
+                  <span id="toggleIcon1">▼</span>
+              </button>
+              <div id="fullGallery1" class="hidden grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
+                <img src="https://lh3.googleusercontent.com/d/1UEJ4WdeMyN689kNoeYnLzanyAJnIFSLT=w1000" class="w-full h-64 object-cover">
+                <img src="https://lh3.googleusercontent.com/d/1VxVJyTr1g0MEE3Hx7ep39QC2Q_gkTOlj=w1000" class="w-full h-64 object-cover">
+                <img src="https://lh3.googleusercontent.com/d/1z-Ujsum5q29H6wN6vNy4-Cq0faFTO0KX=w1000" class="w-full h-64 object-cover">
+                <img src="https://lh3.googleusercontent.com/d/1vesRw3uadzSKvq62-4FC2iGvxfxKasmw=w1000" class="w-full h-64 object-cover">
+                <img src="https://lh3.googleusercontent.com/d/11cSBO1AY8epZHsznLt5-Rjt9JEgHES_5=w1000" class="w-full h-64 object-cover">
+                <img src="https://lh3.googleusercontent.com/d/1qhjqsvnPxlGFF-7Cd6rNeY8Lk7U5rNZt=w1000" class="w-full h-64 object-cover">
+                <img src="https://lh3.googleusercontent.com/d/1xz0EYhDIxC9OWjCMBeQt1KEjmLlwc79e=w1000" class="w-full h-64 object-cover">
+                <img src="https://lh3.googleusercontent.com/d/1Lrx-N-HSf6uo1P_9PE3yQJkWWUk5VNDd=w1000" class="w-full h-64 object-cover">
+                <img src="https://lh3.googleusercontent.com/d/1gvwBOhOnQzM1TM1sJAHt6OQEw6WN1TD2=w1000" class="w-full h-64 object-cover">
+                <img src="https://lh3.googleusercontent.com/d/1ETpaW5fHYLTT-1pRI7ISY4UHGjG7H-Ut=w1000" class="w-full h-64 object-cover">
+                <img src="https://lh3.googleusercontent.com/d/1-QjEVEGIj_Rj2m2oCtg5inv-S1aJSiqD=w1000" class="w-full h-64 object-cover">
+                <img src="https://lh3.googleusercontent.com/d/1hdIvgF91aeBuXq37oEyjmUAUrXzqW1Eg=w1000" class="w-full h-64 object-cover">
+              </div>
+          </div>
+  
+      </div>
+    </section>
+    <!-- End Galeri -->
+
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-10">
+  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Kolom 1: Logo & Deskripsi -->
+    <div>
+      <h2 class="text-2xl font-bold">UKM Pencak Silat</h2>
+      <p class="text-gray-400 mt-2">
+        Wadah bagi mahasiswa yang ingin belajar dan mengembangkan diri dalam seni bela diri tradisional Indonesia.
+      </p>
+    </div>
+
+    <!-- Kolom 2: Navigasi -->
+    <div>
+      <h3 class="text-xl font-semibold mb-3">Navigasi</h3>
+      <ul class="space-y-2">
+        <li><a href="../beranda/index.html" class="text-gray-400 hover:text-white">Beranda</a></li>
+        <li><a href="../tentang/tentang.html" class="text-gray-400 hover:text-white">Tentang</a></li>
+        <li><a href="../galeri/galeri.html" class="text-gray-400 hover:text-white">Galeri</a></li>
+        <li><a href="../prestasi/prestasi.html" class="text-gray-400 hover:text-white">Prestasi</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3: Kontak & Sosial Media -->
+    <div>
+      <h3 class="text-xl font-semibold mb-3">Kontak Kami</h3>
+      <p class="text-gray-400">
+        Email: 
+        <a href="mailto:bangjaa@gmail.com?subject=Halo%20Bang%20Jaa&body=Isi%20pesan%20anda%20disini" 
+           class="text-blue-400 hover:underline">
+           ukmpencaksilat@gmail.com
+        </a>
+    </p>
+    <p class="text-gray-400">
+        Telp: 
+        <a href="https://wa.me/6285715232441" target="_blank" class="text-blue-400 hover:underline">
+            0857-1523-2441
+        </a>
+    </p>                
+      
+      <!-- Sosial Media -->
+      <h3 class="text-xl font-semibold mt-4">Sosial Media</h3>
+      <div class="flex space-x-4 mt-2">
+        <a href="https://www.tiktok.com/@ukmpencaksilatunusia?_t=8qmxrhwy50a&_r=1" class="text-gray-400 hover:text-white text-2xl"><i class='bx bxl-tiktok'></i></a>
+        <a href="https://www.instagram.com/ukm.pencaksilatunusia/" class="text-gray-400 hover:text-white text-2xl"><i class='bx bxl-instagram'></i></a>
+        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class='bx bxl-telegram'></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center text-gray-500 text-sm mt-10">
+    &copy; 2025 UKM Pencak Silat. All Rights Reserved.
+  </div>
+</footer>
+<!-- End Footer -->
+
+<script src="galeri.js"></script>
+<script src="../js/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/d/1hG-F2JiaPbsMC48ILGQ5CdqjjnhNYn47=w1000">
+    <title>Prestasi</title>
+    <!-- Import Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>      
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="prestasi.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-black/50 backdrop-blur-lg shadow-md fixed top-0 left-0 w-full z-50">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <!-- Logo + Brand -->
+        <div class="flex items-center space-x-3">
+          <img src="https://lh3.googleusercontent.com/d/1hG-F2JiaPbsMC48ILGQ5CdqjjnhNYn47=w1000" alt="Logo" class="h-8 w-8">
+          <span class="text-xl font-semibold text-white">UKM Pencak Silat</span>
+        </div>
+    
+        <!-- Navbar Tengah -->
+        <div class="hidden md:flex space-x-6">
+          <a href="../beranda/index.html" class="text-white hover:text-green-400 transition duration-300">Beranda</a>
+          <a href="../tentang/tentang.html" class="text-white hover:text-green-400 transition duration-300">Tentang</a>
+          <a href="../galeri/galeri.html" class="text-white hover:text-green-400 transition duration-300">Galeri</a>
+          <a href="../prestasi/prestasi.html" class="text-white hover:text-green-400 transition duration-300">Prestasi</a>
+        </div>
+    
+        <!-- Tombol Kanan -->
+        <div class="hidden md:flex space-x-4">
+          <button class=" text-white px-4 py-2 rounded-full transition duration-300 hover:bg-green-800">
+            Daftar
+        </button>
+        <a href="../hubungi/hubungi.html" target="_blank"><button class=" text-white px-4 py-2 rounded-full transition duration-300 hover:bg-green-800">
+            Hubungi
+        </button></a> 
+        </div>
+    
+        <!-- Tombol Hamburger (Mobile) -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </nav>
+    
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-black/80 backdrop-blur-lg shadow-lg">
+        <a href="../beranda/index.html" class="block px-6 py-3 border-b text-white hover:bg-gray-800 transition duration-300">Beranda</a>
+        <a href="../tentang/tentang.html" class="block px-6 py-3 border-b text-white hover:bg-gray-800 transition duration-300">Tentang</a>
+        <a href="../galeri/galeri.html" class="block px-6 py-3 border-b text-white hover:bg-gray-800 transition duration-300">Galeri</a>
+        <a href="../prestasi/prestasi.html" class="block px-6 py-3 border-b text-white hover:bg-gray-800 transition duration-300">Prestasi</a>
+        <button class="w-full px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">Daftar</button>
+        <a href="../hubungi/hubungi.html" target="_blank"><button class="w-full px-6 py-3 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition duration-300 mt-2">Hubungi</button></a> 
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Welcome -->
+    <section class="relative h-screen flex items-center justify-center text-center text-white">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 max-w-2xl px-6">
+          <h1 class="text-4xl font-bold md:text-5xl">Prestasi Kami</h1>
+          <p class="mt-4 text-lg md:text-xl">Bukti Dedikasi & Kerja Keras dalam Meraih Keunggulan</p>
+        </div>
+      </section>
+    <!-- End Welcome -->
+
+    <!-- Prestasi -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center mb-10">Daftar Prestasi</h2>
+          
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- Card Prestasi 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg opacity-0 translate-y-5 transition-all duration-700 delay-100">
+              <h3 class="text-xl font-semibold">Juara 1 Lomba XYZ</h3>
+              <p class="mt-2 text-gray-600">Menjadi juara dalam kompetisi tingkat nasional...</p>
+            </div>
+      
+            <!-- Card Prestasi 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg opacity-0 translate-y-5 transition-all duration-700 delay-300">
+              <h3 class="text-xl font-semibold">Finalis Olimpiade ABC</h3>
+              <p class="mt-2 text-gray-600">Berhasil masuk final dalam ajang bergengsi...</p>
+            </div>
+      
+            <!-- Card Prestasi 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg opacity-0 translate-y-5 transition-all duration-700 delay-500">
+              <h3 class="text-xl font-semibold">Penghargaan Inovasi</h3>
+              <p class="mt-2 text-gray-600">Diakui atas kontribusi dalam inovasi...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <!-- End Prestasi -->
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-10">
+  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Kolom 1: Logo & Deskripsi -->
+    <div>
+      <h2 class="text-2xl font-bold">UKM Pencak Silat</h2>
+      <p class="text-gray-400 mt-2">
+        Wadah bagi mahasiswa yang ingin belajar dan mengembangkan diri dalam seni bela diri tradisional Indonesia.
+      </p>
+    </div>
+
+    <!-- Kolom 2: Navigasi -->
+    <div>
+      <h3 class="text-xl font-semibold mb-3">Navigasi</h3>
+      <ul class="space-y-2">
+        <li><a href="../beranda/index.html" class="text-gray-400 hover:text-white">Beranda</a></li>
+        <li><a href="../tentang/tentang.html" class="text-gray-400 hover:text-white">Tentang</a></li>
+        <li><a href="../galeri/galeri.html" class="text-gray-400 hover:text-white">Galeri</a></li>
+        <li><a href="../prestasi/prestasi.html" class="text-gray-400 hover:text-white">Prestasi</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3: Kontak & Sosial Media -->
+    <div>
+      <h3 class="text-xl font-semibold mb-3">Kontak Kami</h3>
+      <p class="text-gray-400">
+        Email: 
+        <a href="mailto:bangjaa@gmail.com?subject=Halo%20Bang%20Jaa&body=Isi%20pesan%20anda%20disini" 
+           class="text-blue-400 hover:underline">
+           ukmpencaksilat@gmail.com
+        </a>
+    </p>
+    <p class="text-gray-400">
+        Telp: 
+        <a href="https://wa.me/6285715232441" target="_blank" class="text-blue-400 hover:underline">
+            0857-1523-2441
+        </a>
+    </p>                
+      
+      <!-- Sosial Media -->
+      <h3 class="text-xl font-semibold mt-4">Sosial Media</h3>
+      <div class="flex space-x-4 mt-2">
+        <a href="https://www.tiktok.com/@ukmpencaksilatunusia?_t=8qmxrhwy50a&_r=1" class="text-gray-400 hover:text-white text-2xl"><i class='bx bxl-tiktok'></i></a>
+        <a href="https://www.instagram.com/ukm.pencaksilatunusia/" class="text-gray-400 hover:text-white text-2xl"><i class='bx bxl-instagram'></i></a>
+        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class='bx bxl-telegram'></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center text-gray-500 text-sm mt-10">
+    &copy; 2025 UKM Pencak Silat. All Rights Reserved.
+  </div>
+</footer>
+<!-- End Footer -->
+
+<script src="prestasi.js"></script>
+<script src="../js/navbar.js"></script>
+</body>
+</html>

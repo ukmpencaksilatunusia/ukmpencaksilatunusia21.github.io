@@ -1,0 +1,14 @@
+
+
+h1, h2, h3 {
+  font-family: 'Monserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+body, p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  background: url('https://lh3.googleusercontent.com/d/1_us2ZFh6YfmrWl_KOk0dS0KifGalL0ia=w1000') center/cover no-repeat;
+}

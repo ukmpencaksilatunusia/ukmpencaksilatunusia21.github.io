@@ -1,0 +1,131 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Monserrat', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+body, p {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+/* Animasi Umum */
+@keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animasi Hero */
+.hero-text {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  
+  /* Hide awal buat Why Section aja */
+  #why-section .animate-slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  /* Show class buat Intersection Observer */
+  #why-section .animate-slide-up.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+
+
+.swiper-slide img {
+    width: 100%;
+    height: 100vh; /* Biar tinggi gambar pas dengan layar */
+    object-fit: cover; /* Biar nggak melar */
+    max-height: 100vh;
+}
+
+.swiper,
+.swiper-wrapper {
+    height: 100vh !important; /* Biar nggak lebih dari viewport */
+}
+
+.relative {
+    height: 100vh; /* Paksa tinggi section biar nggak lebih */
+    overflow: hidden; /* Hindari konten yang keluar dari batas */
+}
+
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #111827;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+}
+
+.scroll-content {
+    display: flex;
+    gap: 24px;
+    white-space: nowrap;
+    animation: scrollLeft 50s linear infinite; /* Animasi scroll diperhalus */
+}
+
+@keyframes scrollLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.comment-card {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px; /* Card lebih lebar */
+    height: 180px; /* Card lebih tinggi biar teks muat */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Nama di atas, komentar di bawah */
+    text-align: center;
+    color: white;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.comment-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #facc15;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center; /* Biar sejajar */
+}
+
+.comment-text {
+    font-size: 1rem;
+    color: #e5e7eb;
+    padding: 0 10px;
+    white-space: normal; /* Teks wrap dalam box */
+    overflow: hidden; /* Pastikan teks tetap di dalam */
+    text-overflow: ellipsis;
+    flex-grow: 1; /* Biar komentar tetap di bawah */
+    display: flex;
+    align-items: center;
+}
+
